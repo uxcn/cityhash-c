@@ -2,6 +2,9 @@
 
 C99 translation of Geoff Pike's and Jyrki Alakuijala's CityHash.
 
+**This hash is superseded by FarmHash (see
+[farmhash-c](https://github.com/uxcn/farmhash-c))**
+
 ### some notes... ###
 
 This version of CityHash is translated from the original code released via
