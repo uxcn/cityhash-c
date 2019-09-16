@@ -32,7 +32,7 @@ static const uint128_t kseed128 = {kseed0, kseed1};
 static const int kdata_size = 1 << 20;
 static const int ktest_size = 300;
 
-static uint8_t data[kdata_size];
+static uint8_t data[1 << 20]; // kdata_size
 
 static int errors = 0; // global error count
 
@@ -54,7 +54,7 @@ void setup() {
   }
 }
 
-static const uint64_t testdata[ktest_size][16] = {
+static const uint64_t testdata[300][16] = {
     {0x9ae16a3b2f90404f, 0x75106db890237a4a, 0x3feac5f636039766,
      0x3df09dfc64c09a2b, 0x3cb540c392e51e29, 0x6b56343feac0663,
      0x5b7bc50fd8e8ad92, 0x3df09dfc64c09a2b, 0x3cb540c392e51e29,

@@ -593,8 +593,6 @@ uint128_t cityhash128_with_seed(const uint8_t* s, size_t len, uint128_t seed) {
 
 uint128_t cityhash128(const uint8_t* s, size_t len) {
 
-  uint128_t seed;
-
   if (len >= 16) {
 
     uint128_t seed = {fetch64(s), fetch64(s + 8) + k0};
